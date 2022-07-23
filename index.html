@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>JS TABLE COUNTER</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <div class="Wrapper">
+     <div class="Container">
+      <div class="BGimg">
+       <h1>TABLE PRINTER</h1><br>
+       <form onsubmit="calculate();  return false;">
+       <p>
+        <input type="number" placeholder="Enter a NUMBER Please.." id="marks1" min="1" max="100" required/>
+      </p>
+        <p><button type="submit">Print TABLE here !!</button></p>
+        <h4 id="table"></h4>
+
+   </form>
+  </div>
+ </div>
+</div>
+<script>
+    function calculate() {
+      let numbers = +document.querySelector("#marks1").value;
+ for (let i = 1; i <= 12; i++) {
+      document.querySelector("#table")
+        .innerHTML += `${numbers +  "x" + i + "=" + numbers * i + "<br>"}`;
+   }
+   
+   }
+   
+
+
+
+   </script>
+ </body>
+</html>
