@@ -4,7 +4,18 @@ padding: 0;
 font-family: cursive;
 }
 .Wrapper {
+width: 100%;
+height: 100vh;
+background-color: skyblue;
+}
+
+.background{
+  background-image: url(download.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
+  min-height: 100vh;
+  background-size: cover;
 }
 .Container{
  width: 100%;
@@ -13,6 +24,7 @@ font-family: cursive;
 h1{
  letter-spacing: 1px;
  padding-top:1rem;
+  color:darkgreen;
 }
 input{
  padding:8px;
@@ -20,6 +32,7 @@ input{
  width: 20%;
  font-size: 16px;
  background-color:pink;
+ color:grey;
  }
 button{
 padding: 8px;
@@ -28,11 +41,101 @@ margin-top: 7px;
 width: 20%;
 font-size: 15px;
 background-color:pink;
-
+text-align: left;
+color:grey;
 }
 h4{
-  font-size: 20px;
-  margin-top: 1rem;
-  color:black;
-  font-family: cursive;
+font-size: 20px;
+margin-top: 1rem;
+color: darkgreen;
+font-family: cursive;
+
 }
+
+               /*   MEDIA QUERIES CODE   */
+/* 
+  ##Device = Most of the Smartphones Mobiles: 
+  ##Screen = B/w 320px to 479px :
+*/
+
+@media (min-width: 150px) and (max-width: 479px) {
+.Wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: skyblue;
+}
+.container{
+   width:100%;
+   font-size: 16px;
+}
+h1{
+ letter-spacing: 1px;
+ padding-top:1rem;
+ font-size: 25px;
+}
+input,button{
+ padding:8px;
+ border: 2px solid red ;
+ width: 50%;
+ font-size: 14px;
+ background-color:pink;
+ }
+}
+/* 
+  ##Device = Tablets, Ipads :
+  ##Screen = B/w 768px to 1024px :
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+.Wrapper{
+ width: 100%;
+ height: 100vh;
+ background-color: skyblue;
+}
+.container{
+ width:100%;
+ font-size: 16px;
+}
+h1{
+ letter-spacing: 1px;
+ padding-top:1rem;
+ font-size: 25px;
+}
+input,button{
+ padding:8px;
+ border: 2px solid red ;
+ width: 30%;
+ font-size: 14px;
+ background-color:pink;
+ }
+}
+
+/* 
+  ##Device = Desktops: 
+  ##Screen = 1281px to higher resolution desktops :
+*/
+@media (min-width: 1024px) and (max-width: 1470px) {
+.Wrapper{
+ width: 100%;
+ height: 100vh;
+ background-color: skyblue;
+}
+.container{
+ width:100%;
+ font-size: 16px;
+}
+h1{
+ letter-spacing: 1px;
+ padding-top:1rem;
+ font-size: 30px;
+}
+input,button{
+ padding:8px;
+ border: 2px solid red ;
+ width: 25%;
+ font-size: 18px;
+ background-color:pink;
+ }
+
+}
+ 
+             /*  MEDIA ZUERIES END  */
