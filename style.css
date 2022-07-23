@@ -10,19 +10,9 @@ font-family: cursive;
  width: 100%;
  text-align: center;
 }
-/*.BGimg{
- width: 100%;
- background-image: url(download.jpg);
- background-position: center;
-/* background-repeat: no-repeat;
-*/ background-size: cover;
- height: 100vh;
-}
-*/
 h1{
  letter-spacing: 1px;
  padding-top:1rem;
- color: white;
 }
 input{
  padding:8px;
